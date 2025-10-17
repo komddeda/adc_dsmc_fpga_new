@@ -1,0 +1,12 @@
+-d E:\rockchip-dsmc\adc_dsmc_fpga\impl\gwsynthesis\adc_dsmc_fpga.vg
+-p GW5A-25A-UBGA324-1
+-pn GW5A-LV25UG324ES
+-cst E:\rockchip-dsmc\adc_dsmc_fpga\src\adc_dsmc_fpga.cst
+-cfg E:\rockchip-dsmc\adc_dsmc_fpga\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23

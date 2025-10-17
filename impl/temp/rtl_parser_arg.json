@@ -1,0 +1,29 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dsmc_dram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/parallel_adc_capture.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/sc1467.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

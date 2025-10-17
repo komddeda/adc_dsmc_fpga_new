@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="dram_dsmc_localbus_with_adc" Register="94" Alu="15" Lut="118">
+    <SubModule name="gen_dsmc_io[0].iddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[0].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[0].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[0].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[1].iddr_dq_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[1].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[1].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[1].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[2].iddr_dq_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[2].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[2].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[2].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[3].iddr_dq_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[3].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[3].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[3].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[4].iddr_dq_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[4].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[4].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[4].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[5].iddr_dq_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[5].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[5].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[5].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[6].iddr_dq_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[6].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[6].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[6].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[7].iddr_dq_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[7].iddr_dq1_inst" Register="2"/>
+    <SubModule name="gen_dsmc_io[7].oddr_dq_inst" Register="2" Lut="1"/>
+    <SubModule name="gen_dsmc_io[7].oddr_dq1_inst" Register="2" Lut="1"/>
+    <SubModule name="U0" Bsram="32"/>
+</Module>

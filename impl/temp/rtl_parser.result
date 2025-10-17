@@ -1,0 +1,550 @@
+[
+ {
+  "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+  "InstLine" : 150,
+  "InstName" : "dram_dsmc_localbus_with_adc",
+  "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+  "ModuleLine" : 150,
+  "ModuleName" : "dram_dsmc_localbus_with_adc",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[0].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[0].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[0].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[0].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[0].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[0].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[0].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[0].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[1].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[1].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[1].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[1].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[1].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[1].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[1].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[1].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[2].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[2].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[2].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[2].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[2].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[2].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[2].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[2].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[3].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[3].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[3].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[3].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[3].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[3].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[3].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[3].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[4].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[4].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[4].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[4].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[4].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[4].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[4].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[4].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[5].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[5].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[5].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[5].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[5].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[5].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[5].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[5].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[6].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[6].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[6].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[6].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[6].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[6].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[6].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[6].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 250,
+    "InstName" : "gen_dsmc_io[7].iobuf_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 262,
+    "InstName" : "gen_dsmc_io[7].iobuf_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 34,
+    "ModuleName" : "GTP_IOBUF"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 273,
+    "InstName" : "gen_dsmc_io[7].iodelay_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 286,
+    "InstName" : "gen_dsmc_io[7].iodelay_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 112,
+    "ModuleName" : "GTP_IODELAY"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 298,
+    "InstName" : "gen_dsmc_io[7].iddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 309,
+    "InstName" : "gen_dsmc_io[7].iddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 52,
+    "ModuleName" : "GTP_IDDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 320,
+    "InstName" : "gen_dsmc_io[7].oddr_dq_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 333,
+    "InstName" : "gen_dsmc_io[7].oddr_dq1_inst",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "ModuleLine" : 76,
+    "ModuleName" : "GTP_ODDR_E2"
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 442,
+    "InstName" : "u_adc",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/sc1467.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "sc1467",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/sc1467.v",
+      "InstLine" : 62,
+      "InstName" : "u_parallel_adc_capture",
+      "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/parallel_adc_capture.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "parallel_adc_capture"
+     }
+    ]
+   },
+   {
+    "InstFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dram_dsmc_localbus.v",
+    "InstLine" : 487,
+    "InstName" : "U0",
+    "ModuleFile" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/dsmc_dram.v",
+    "ModuleLine" : 32,
+    "ModuleName" : "dsmc_dram"
+   }
+  ]
+ }
+]
