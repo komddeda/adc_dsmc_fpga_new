@@ -8,6 +8,8 @@
         <File path="E:\rockchip-dsmc\adc_dsmc_fpga\src\dsmc_dram.v" type="verilog"/>
         <File path="E:\rockchip-dsmc\adc_dsmc_fpga\src\parallel_adc_capture.v" type="verilog"/>
         <File path="E:\rockchip-dsmc\adc_dsmc_fpga\src\sc1467.v" type="verilog"/>
+        <File path="E:\rockchip-dsmc\adc_dsmc_fpga\src\ad_capture_dsmc.v" type="verilog"/>
+        <File path="E:\rockchip-dsmc\adc_dsmc_fpga\src\adc_control.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

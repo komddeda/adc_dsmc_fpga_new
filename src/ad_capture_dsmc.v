@@ -1,5 +1,26 @@
 `timescale 1ns / 1ps
-module adc_capture_dsmc (
+// -----------------------------------------------------------------------------
+//  Title      : Top‑level ADC capture with automatic sampling
+//  File       : adc_capture_dsmc_auto.v
+//  Description: This top‑level module ties together the AD7606 capture front
+//               end, the memory write control logic and the DSMC local bus
+//               interface.  Unlike the original design, there is no software
+//               controlled enable signal: the ADC continuously samples and
+//               writes data to the dual‑port RAM.  The DSMC master can read
+//               the latest samples from the reserved ADC window (0x3F8–0x3FC)
+//               or read historical data from the RAM address space.  No
+//               interrupt is generated; polling mode is used.
+//
+//  The module instantiates the modified sc1467_auto and adc_control_auto
+//  modules which do not depend on an external enable.  It also instantiates
+//  the dual‑port RAM and the DSMC interface (unchanged from the original
+//  design).
+//
+//  Ports are identical to the original adc_capture_dsmc module except that
+//  there is no adc_enable interface.
+// -----------------------------------------------------------------------------
+
+module adc_capture_dsmc_auto (
     // FPGA system clock and reset
     input  wire        sys_clk,      // System clock (e.g., 100 MHz)
     input  wire        rst_n,        // Global reset, active low
@@ -13,7 +34,7 @@ module adc_capture_dsmc (
     input  wire        adc_busy,     // AD7606 BUSY indicator
     output wire        adc_cs_n,     // AD7606 Chip Select (active low)
     output wire        adc_rd_n,     // AD7606 RD (active low)
-    input  wire [15:0] adc_data,     // AD7606 16-bit parallel data output
+    input  wire [15:0] adc_data,     // AD7606 16‑bit parallel data output
 
     // DSMC local bus interface signals (to CPU)
     input  wire        DSMC_CLKP,    // DSMC differential clock (positive)
@@ -25,12 +46,10 @@ module adc_capture_dsmc (
     inout  wire        DSMC_DQS1,    // DSMC data strobe (upper byte)
     inout  wire [7:0]  DSMC_DQ,      // DSMC data bus [7:0]
     inout  wire [7:0]  DSMC_DQ1,     // DSMC data bus [15:8]
-    output wire        dsmc_int      // DSMC interrupt request to CPU (disabled in polling mode)
+    output wire        dsmc_int      // DSMC interrupt request to CPU (unused, tied low)
 );
-    // Internal enable signal for ADC sampling (controlled by CPU via DSMC write to addr 0)
-    reg adc_enable;
 
-    // Wires for inter-module connections
+    // Wires for inter‑module connections
     wire adc_read_done;
     wire [15:0] adc_ch1, adc_ch2, adc_ch3, adc_ch4;
     wire [15:0] adc_ch5, adc_ch6, adc_ch7, adc_ch8;
@@ -43,11 +62,11 @@ module adc_capture_dsmc (
     wire        lb_rd_clk_en;
     wire [31:0] lb_rd_data;
 
-    // Instantiate AD7606 interface and capture module (sc1467 includes parallel_adc_capture)
-    sc1467 #(
-        .FPGA_CLOCK_FREQ    (100),   // (MHz) adjust as needed
-        .ADC_SAMPLING_RATE  (20)    // (kSPS) adjust as needed
-    ) u_sc1467 (
+    // Instantiate AD7606 interface and capture module (always enabled)
+    sc1467_auto #(
+        .FPGA_CLOCK_FREQ   (100),   // (MHz) adjust as needed
+        .ADC_SAMPLING_RATE (20)    // (kSPS) adjust as needed
+    ) u_sc1467_auto (
         .sys_clk            (sys_clk),
         .rst_n              (rst_n),
         .adc_reset          (adc_reset),
@@ -68,16 +87,13 @@ module adc_capture_dsmc (
         .adc_ch6_data_out   (adc_ch6),
         .adc_ch7_data_out   (adc_ch7),
         .adc_ch8_data_out   (adc_ch8),
-        .adc_read_done      (adc_read_done),
-        // New enable control input
-        .adc_enable         (adc_enable)
+        .adc_read_done      (adc_read_done)
     );
 
-    // Instantiate ADC control module for memory writing
-    adc_control u_adc_control (
+    // Instantiate ADC control module for memory writing (no enable input)
+    adc_control_auto u_adc_control (
         .sys_clk        (sys_clk),
         .rst_n          (rst_n),
-        .adc_enable     (adc_enable),
         .adc_read_done  (adc_read_done),
         .adc_ch1        (adc_ch1),
         .adc_ch2        (adc_ch2),
@@ -93,7 +109,10 @@ module adc_capture_dsmc (
         .mem_wr_en      (lb_wr_en)
     );
 
-    // Instantiate DSMC local bus interface module (connects to CPU memory bus)
+    // Instantiate DSMC local bus interface module (connects to CPU memory bus).
+    // The DSMC interface itself manages address decoding and will overlay the
+    // latest ADC samples at addresses 0x3F8–0x3FC.  This module does not
+    // provide an enable output in this configuration.
     dram_dsmc_localbus u_dsmc_bus (
         .sys_clk        (sys_clk),
         .DSMC_CLKP      (DSMC_CLKP),
@@ -112,12 +131,11 @@ module adc_capture_dsmc (
         .wr_en_ext      (lb_wr_en),
         .rd_addr_ext    (lb_rd_addr),
         .rd_data_ext    (lb_rd_data),
-        .rd_clk_en_ext  (lb_rd_clk_en),
-        // Control output for ADC enable from CPU
-        .adc_enable_out (adc_enable)
+        .rd_clk_en_ext  (lb_rd_clk_en)
+        // Note: no adc_enable_out port is connected in this configuration
     );
 
-    // Instantiate dual-port RAM for data buffering between ADC (write) and CPU (read)
+    // Instantiate dual‑port RAM for data buffering between ADC (write) and CPU (read)
     dsmc_dram #(
         .WR_ADDR_WIDTH  (14),
         .WR_DATA_WIDTH  (32),
@@ -142,4 +160,3 @@ module adc_capture_dsmc (
     assign dsmc_int = 1'b0;
 
 endmodule
-

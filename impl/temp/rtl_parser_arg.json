@@ -16,6 +16,14 @@
   {
    "Path" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/sc1467.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/ad_capture_dsmc.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/rockchip-dsmc/adc_dsmc_fpga/src/adc_control.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [

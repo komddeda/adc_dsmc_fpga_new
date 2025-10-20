@@ -4,70 +4,12 @@ Analyzing Verilog file 'E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v'
 Analyzing Verilog file 'E:\rockchip-dsmc\adc_dsmc_fpga\src\dsmc_dram.v'
 Analyzing Verilog file 'E:\rockchip-dsmc\adc_dsmc_fpga\src\parallel_adc_capture.v'
 Analyzing Verilog file 'E:\rockchip-dsmc\adc_dsmc_fpga\src\sc1467.v'
-WARN  (EX3073) : Port 'adc_enable' remains unconnected for this instance("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":463)
-Compiling module 'dram_dsmc_localbus_with_adc'("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":150)
-Compiling module 'GTP_IOBUF(DRIVE_STRENGTH=8)'("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":34)
-Compiling module 'GTP_IODELAY(DELAY_STEP=7'd30,DELAY_DEPTH=7)'("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":112)
-Compiling module 'GTP_IDDR_E2'("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":52)
-Compiling module 'GTP_ODDR_E2'("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":76)
-Compiling module 'sc1467'("E:\rockchip-dsmc\adc_dsmc_fpga\src\sc1467.v":2)
+Analyzing Verilog file 'E:\rockchip-dsmc\adc_dsmc_fpga\src\ad_capture_dsmc.v'
+Analyzing Verilog file 'E:\rockchip-dsmc\adc_dsmc_fpga\src\adc_control.v'
+Compiling module 'adc_capture_dsmc_auto'("E:\rockchip-dsmc\adc_dsmc_fpga\src\ad_capture_dsmc.v":23)
+Compiling module 'sc1467_auto'("E:\rockchip-dsmc\adc_dsmc_fpga\src\sc1467.v":34)
 Compiling module 'parallel_adc_capture'("E:\rockchip-dsmc\adc_dsmc_fpga\src\parallel_adc_capture.v":2)
-Compiling module 'dsmc_dram'("E:\rockchip-dsmc\adc_dsmc_fpga\src\dsmc_dram.v":32)
-WARN  (EX2565) : Input 'adc_enable' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":463)
-NOTE  (EX0101) : Current top module is "dram_dsmc_localbus_with_adc"
-[5%] Running netlist conversion ...
-WARN  (CV0016) : Input DSMC_CLKN is unused("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":157)
-WARN  (CV0016) : Input DSMC_CS1 is unused("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":159)
-WARN  (CV0016) : Input DSMC_RESENT is unused("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":160)
-Running device independent optimization ...
-[10%] Optimizing Phase 0 completed
-[15%] Optimizing Phase 1 completed
-[25%] Optimizing Phase 2 completed
-Running inference ...
-[30%] Inferring Phase 0 completed
-[40%] Inferring Phase 1 completed
-[50%] Inferring Phase 2 completed
-[55%] Inferring Phase 3 completed
-Running technical mapping ...
-[60%] Tech-Mapping Phase 0 completed
-[65%] Tech-Mapping Phase 1 completed
-[75%] Tech-Mapping Phase 2 completed
-[80%] Tech-Mapping Phase 3 completed
-[90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[0].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[0].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[0].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[0].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[1].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[1].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[1].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[1].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[2].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[2].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[2].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[2].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[3].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[3].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[3].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[3].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[4].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[4].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[4].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[4].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[5].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[5].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[5].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[5].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[6].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[6].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[6].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[6].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[7].iobuf_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":267)
-WARN  (NL0002) : The module "GTP_IOBUF" instantiated to "gen_dsmc_io[7].iobuf_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":255)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[7].iodelay_dq1_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":293)
-WARN  (NL0002) : The module "GTP_IODELAY" instantiated to "gen_dsmc_io[7].iodelay_dq_inst" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":280)
-WARN  (NL0002) : The module "sc1467" instantiated to "u_adc" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\dram_dsmc_localbus.v":463)
-WARN  (NL0002) : The module "parallel_adc_capture" instantiated to "u_parallel_adc_capture" is swept in optimizing("E:\rockchip-dsmc\adc_dsmc_fpga\src\sc1467.v":81)
-[95%] Generate netlist file "E:\rockchip-dsmc\adc_dsmc_fpga\impl\gwsynthesis\adc_dsmc_fpga.vg" completed
-[100%] Generate report file "E:\rockchip-dsmc\adc_dsmc_fpga\impl\gwsynthesis\adc_dsmc_fpga_syn.rpt.html" completed
+Compiling module 'adc_control_auto'("E:\rockchip-dsmc\adc_dsmc_fpga\src\adc_control.v":30)
+ERROR (EX3937) : Instantiating unknown module 'dram_dsmc_localbus'("E:\rockchip-dsmc\adc_dsmc_fpga\src\ad_capture_dsmc.v":136)
+Module 'adc_capture_dsmc_auto' remains a black box due to errors in its contents("E:\rockchip-dsmc\adc_dsmc_fpga\src\ad_capture_dsmc.v":23)
 GowinSynthesis finish

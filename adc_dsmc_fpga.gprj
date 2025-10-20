@@ -5,6 +5,8 @@
     <Version>5</Version>
     <Device name="GW5A-25A" pn="GW5A-LV25UG324ES">gw5a25a-006</Device>
     <FileList>
+        <File path="src/ad_capture_dsmc.v" type="file.verilog" enable="1"/>
+        <File path="src/adc_control.v" type="file.verilog" enable="1"/>
         <File path="src/dram_dsmc_localbus.v" type="file.verilog" enable="1"/>
         <File path="src/dsmc_dram.v" type="file.verilog" enable="1"/>
         <File path="src/parallel_adc_capture.v" type="file.verilog" enable="1"/>

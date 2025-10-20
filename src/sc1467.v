@@ -1,5 +1,37 @@
- `timescale 1ns / 1ps
-module sc1467 #(
+`timescale 1ns / 1ps
+// -----------------------------------------------------------------------------
+//  Title      : AD7606 front‑end wrapper with continuous conversion
+//  File       : sc1467_auto.v
+//  Description: This module wraps the parallel ADC capture core and exposes
+//               control/status signals for the AD7606B converter.  The original
+//               design included an enable input to gate sampling; this
+//               modified version permanently enables sampling so the ADC
+//               continuously converts at the configured rate.  The conversion
+//               start signal (CONVST) is always driven from the internal
+//               sampling clock, and no external enable is required.
+//
+//  The oversampling ratio (OS) is fixed at 0 (no oversampling) and the input
+//  voltage range is fixed at ±5 V.  Reset behaviour is unchanged: the ADC is
+//  held in reset while rst_n is low.
+//
+//  Ports:
+//    sys_clk        : system clock
+//    rst_n          : asynchronous active‑low reset
+//    adc_reset      : AD7606 reset (active high)
+//    adc_convst_a/b : AD7606 conversion start signals
+//    adc_os[2:0]    : oversampling control (fixed to 000)
+//    adc_range      : input voltage range (fixed to 0 => ±5 V)
+//    adc_busy       : AD7606 BUSY input
+//    adc_cs_n       : chip select for reading ADC data
+//    adc_rd_n       : read strobe for ADC data
+//    adc_data[15:0] : parallel ADC data bus
+//    adc_chx_data_out: captured channel samples
+//    adc_read_done  : asserted when all eight channels have been captured
+//
+//  Copyright (c) 2025.  This code is provided without warranty of any kind.
+// -----------------------------------------------------------------------------
+
+module sc1467_auto #(
     parameter FPGA_CLOCK_FREQ   = 100,  // FPGA主时钟频率 (MHz)
     parameter ADC_SAMPLING_RATE = 20    // ADC采样速率 (kSPS)
 )(
@@ -31,10 +63,7 @@ module sc1467 #(
     output wire [15:0] adc_ch8_data_out,
 
     // 采集完成标志输出
-    output wire        adc_read_done,
-
-    // 新增：ADC采集使能控制输入
-    input  wire        adc_enable
+    output wire        adc_read_done
 );
 
     // 内部信号
@@ -52,22 +81,22 @@ module sc1467 #(
     assign adc_reset    = ~rst_n;
     // AD7606并行接口写控制不使用，保持高电平
     assign adc_wr_n     = 1'b1;
-    // 将外部enable控制赋给内部转换使能
-    assign adc_convst_en = adc_enable;
+    // 连续采样模式下，始终使能转换
+    assign adc_convst_en = 1'b1;
 
     // 实例化并行ADC采集子模块
     parallel_adc_capture #(
         .FPGA_CLOCK_FREQ   (FPGA_CLOCK_FREQ),
         .ADC_SAMPLING_RATE (ADC_SAMPLING_RATE)
     ) u_parallel_adc_capture (
-        .sys_clk        (sys_clk),
-        .rst_n          (rst_n),
-        .adc_convst     (adc_convst),
-        .adc_busy       (adc_busy),
-        .adc_cs_n       (adc_cs_n),
-        .adc_rd_n       (adc_rd_n),
-        .adc_wr_n       (adc_wr_n),
-        .adc_data       (adc_data),
+        .sys_clk          (sys_clk),
+        .rst_n            (rst_n),
+        .adc_convst       (adc_convst),
+        .adc_busy         (adc_busy),
+        .adc_cs_n         (adc_cs_n),
+        .adc_rd_n         (adc_rd_n),
+        .adc_wr_n         (adc_wr_n),
+        .adc_data         (adc_data),
         .adc_ch1_data_out (adc_ch1_data_out),
         .adc_ch2_data_out (adc_ch2_data_out),
         .adc_ch3_data_out (adc_ch3_data_out),
@@ -76,8 +105,8 @@ module sc1467 #(
         .adc_ch6_data_out (adc_ch6_data_out),
         .adc_ch7_data_out (adc_ch7_data_out),
         .adc_ch8_data_out (adc_ch8_data_out),
-        .adc_convst_en  (adc_convst_en),
-        .adc_read_done  (adc_read_done)
+        .adc_convst_en    (adc_convst_en),
+        .adc_read_done    (adc_read_done)
     );
 
 endmodule
